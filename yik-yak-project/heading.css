@@ -1,0 +1,46 @@
+
+h1 {
+    color: black;
+    text-align: center;
+    background-color:lightgrey;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover{ 
+	color: blue;
+ }
+
+a:visited { 
+	color:purple 
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+
+}
+
+.my-form input {
+	padding: 8px 8px 8px;
+	width: 78%;
+
+}
+.my-form .form-group input [type="text"]{
+
+}
+.my-form input [type="post message"] {
+	background-color: lightgrey;
+	color: white;
+}
+
+
+button:hover {
+	color: blue;
+}
+
