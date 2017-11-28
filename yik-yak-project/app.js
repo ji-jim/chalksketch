@@ -1,5 +1,6 @@
 
 function postMessage() {
+
 	var input = document.getElementById('input').value;
 	var posts = document.getElementById('posts');
 
@@ -8,7 +9,11 @@ function postMessage() {
 	newP.appendChild(newText);   
 
 	posts.appendChild(newP);
+	document.getElementById('myForm').reset();
 
-	document.getElementByIdv('myForm').reset();
+	var firebaseRef = firebase.database().ref();
+
+	firebaseRef.push("text").set(input)
 
 }
+

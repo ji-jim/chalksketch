@@ -22,7 +22,7 @@
   	   <a href="feed.html"> feed </a>
   	   <a href="latest.html"> latest</a>
 
-       </div>
+      </div>
 
      	<form id= 'myForm' action='#'>
       	<input id="input" type = "text"> 
@@ -32,9 +32,33 @@
 	    
       <div id="posts">
 
+      	<h2 id = 'test'> </h2>
       </div>
 
-	 </div> <!--container ends here  -->
+  </div> <!--container ends here  -->
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYkEYtHT76-eZ-PUN9m1C-f4puXSaoGOA",
+    authDomain: "yak-yick-clone.firebaseapp.com",
+    databaseURL: "https://yak-yick-clone.firebaseio.com",
+    projectId: "yak-yick-clone",
+    storageBucket: "",
+    messagingSenderId: "687414347586"
+  };
+  firebase.initializeApp(config);
+
+/*
+  	var test = document.getElementById('test');
+	var dbRef = firebase.database().ref().child('text');
+	dbRef.on('value', snap => test.innerText = snap.val());
+*/
+
+</script>
 
 
 </body>
