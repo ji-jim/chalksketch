@@ -12,8 +12,9 @@
 <body>
   
   <div class= 'container'>
-  	 <h1> Yak Yick </h1>
+  	 <h1> Yak Yik </h1>
   	 <h3> got a problem, post on here! </h3>
+
 
 
       <div class= 'navigation'>
@@ -26,13 +27,16 @@
 
      	<form id= 'myForm' action='#'>
       	<input id="input" type = "text"> 
-	 		  <input type="submit" onclick="postMessage()"> </button>
-
+	 		  <input type="submit" onclick="postMessage()"> 
 	    </form>
 	    
+
+	<h2> Newsfeed </h2>
+		    
       <div id="posts">
 
-      	<h2 id = 'test'> </h2>
+      	
+
       </div>
 
   </div> <!--container ends here  -->
@@ -52,13 +56,10 @@
   };
   firebase.initializeApp(config);
 
-/*
-  	var test = document.getElementById('test');
-	var dbRef = firebase.database().ref().child('text');
-	dbRef.on('value', snap => test.innerText = snap.val());
-*/
-
 </script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script src="index.js"> </script>	
 
 
 </body>

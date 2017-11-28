@@ -1,4 +1,6 @@
 
+// data to firebase-database
+
 function postMessage() {
 
 	var input = document.getElementById('input').value;
@@ -11,9 +13,16 @@ function postMessage() {
 	posts.appendChild(newP);
 	document.getElementById('myForm').reset();
 
+		/* link with firebase database below */
+
 	var firebaseRef = firebase.database().ref();
 
-	firebaseRef.push("text").set(input)
+	var newMessage = input.value;
+
+	firebaseRef.child('text').push().set(input);
 
 }
+
+// retrieve data
+
 
