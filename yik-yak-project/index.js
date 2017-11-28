@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 		var snapData = snap.val();
 		
-		$('#posts').append(snapData);
+		$('#posts').append("<p>" + snapData + "</p>");
 
 	});
 });
