@@ -1,5 +1,5 @@
 
-// data to firebase-database
+// retrieve data and data to firebase
 
 function postMessage() {
 
@@ -24,6 +24,6 @@ function postMessage() {
 
 }
 
-// retrieve data
+// 
 
 
